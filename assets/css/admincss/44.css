@@ -1,0 +1,364 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
+
+body {
+  background-color: #f7f2f2;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+}
+
+div.table-title {
+   display: block;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+}
+
+.table-title h3 {
+   color: #333;
+   font-size: 30px;
+   font-weight: 400;
+   font-style:normal;
+   font-family: "Roboto", helvetica, arial, sans-serif;
+   text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+   text-transform:uppercase;
+}
+
+
+/*** Table Styles **/
+
+.table-fill {
+  background: white;
+  border-radius:3px;
+  border-collapse: collapse;
+  height: 320px;
+  margin: auto;
+  max-width: 600px;
+  padding:5px;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+ 
+th {
+  color:#fff;;
+  background:#1b1e24;
+  border-bottom:4px solid #9ea7af;
+  border-right: 1px solid #343a45;
+  font-size:23px;
+  font-weight: 2000;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+  
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom-: 1px solid #C1C3D1;
+  color:#1B1E24;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+#Message44 {
+  margin-top: 30px;
+  text-align: center;
+  color:#7b7b7b;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.ButtonDiv44 {
+  margin: auto;
+  width: 50%;
+  border: 0px solid #73AD21;
+  padding: 30px 0 0 0;
+  text-align: center;
+}
+
+.MessageDiv44 {
+  margin: auto;
+  width: 50%;
+  border: 0px solid #73AD21;
+  padding: -30px 0 0 0;
+  text-align: center;
+}
+
+.HistoryDiv44 {
+  margin: auto;
+  width: 90%;
+  border: 0px solid #73AD21;
+  padding: 0px 0 0 0;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.RemarksDiv44 {
+  margin: auto;
+  width: 50%;
+  border: 0px solid #73AD21;
+  padding: 30px 0 0 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #e3e3e3;
+}
+
+.Button44 {
+  background-color: #333; 
+  border: none;
+  color: white;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 5px 10px 5px 10px;
+  font-weight: bold;
+}
+
+.DisappDiv44 {
+  margin: auto;
+  width: 100%;
+  border: 0px solid #73AD21;
+  padding: 30px 0 0 0;
+  text-align: center;
+  display: inline;
+  font-size: 15px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: center;
+  color: #333;
+}
+
+p#statp {
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+p#changesp{
+  color: red;
+  font-size: 15px;
+  font-weight: 300;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: center;
+}
+
+p#embed{
+  color: red;
+  font-size: 15px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: center;
+  display: block;
+  margin: 0px auto 0px auto;
+  max-width: 600px;
+  padding:5px;
+  width: 90%;
+}
+
+p#embed2{
+  color: red;
+  font-size: 15px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: cnter;
+  display: block;
+  margin: 0px auto;
+  max-width: 600px;
+  padding:5px;
+  width: 90%;
+}
+
+p#embed3{
+  color: red;
+  font-size: 15px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: cnter;
+  display: block;
+  margin: 0px auto;
+  max-width: 600px;
+  padding:5px;
+  width: 90%;
+}
+
+
+
+textarea#RemarksTextArea{
+  color: #333;
+  font-size: 15px;
+  font-weight: 400;
+  font-style:normal;
+  font-family: "Roboto", helvetica, arial, sans-serif;
+  text-align: left;
+  display: block;
+  margin: auto;
+  padding:5px;
+  width: 100%;
+}
+
+
+
+/* Popup container */
+.popup {
+    position: relative;
+    /*display: inline-block;*/
+    display: block;
+    cursor: pointer;
+    align-items: center;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    /*width: 160px;*/
+    width: 500px;
+    /*background-color: #555;*/
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    /*bottom: 125%;
+    left: 50%;
+    margin-left: -80px;*/
+    left: 50%;
+    margin-left: 0px;
+}
+
+ul.action li{
+    list-style-type: none;
+    margin: auto;
+    padding: 0 20px;
+    width: 100%;
+    display: inline;
+    text-align: center;
+    align-content: center;
+    color: blue;
+    text-decoration: underline;
+} 
+
+ul.action{
+    display: inline;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+} 
+
+li:hover {
+  cursor: hand;  
+  cursor: pointer;
+}
+
+table {
+  width: 100%
+}
+
+h2#HistoryH2 {
+  color:#333;
+  font-size: 30px;
+}
+
+h3.h3_58 {
+  text-align: center;
+  margin: 30px auto;
+  align-self: center;
+  align-content: center;
+}

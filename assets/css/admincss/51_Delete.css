@@ -1,0 +1,7 @@
+.DeleteTD:hover {
+	cursor: pointer;
+}
+
+.DeleteTD {
+	text-decoration: underline;
+}
