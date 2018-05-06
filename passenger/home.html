@@ -5,18 +5,31 @@
       <meta charset="utf-8">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
       
-      <link rel="stylesheet" type="text/css" href="css/main.css">
-      <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAn79_RPcO8QoDo5vatp7TMnWqB3fTf8FM&libraries=places&callback=initMap"async defer></script>
-  </head>
-  <body>
-      <input id="origin-input" class="controls" type="text" placeholder="Enter an origin location">
-      <input id="destination-input" class="controls" type="text" placeholder="Enter a destination location">
-      <div id="map"></div>
+      <!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+      <link rel="stylesheet" type="text/css" href="css/betacars.css">
+      <link rel="stylesheet" type="text/css" href="css/betacarsandroid.css">
+      <!-- jQuery -->
+      <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<!-- Google Maps Javascript API -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAjhXVABFxTOnBzKzZnC1dICeZ1fqDyDg&libraries=places&callback=initMap"async defer></script>
       
-      <button id="btnRegular" onclick="btnBookClicked('regular')" class="controls_btn">Regular Car</button>
-      <button id="btnPremium" onclick="btnBookClicked('premium')" class="controls_btn">Premium Car</button>
+      <script type="text/javascript" src=js/index.js>	
+  </head>
+  <body style="margin-top: 60px;">
+  
+		<div id="navbar">
+			<button id="btnRegular" onclick="btnBookClicked('regular')" >Regular Car</button>
+      		<button id="btnPremium" onclick="btnBookClicked('premium')" >Premium Car</button>
+		
+		</div>  
+  		
+  	<div>	
+  	  <input id="origin-input" placeholder="Enter an origin location" autocomplete="off" style="z-index: 0; position: absolute; left: 0px; top: 0px;width: 200px;height: 20px;" type="text">
+      <input id="destination-input" placeholder="Enter a destination location" autocomplete="off" style="z-index: 0; position: absolute; top: 30px; left: 0px;width: 200px;height: 20px;" type="text">
+  	</div>	
+      
+      
+      <div id="map"></div>
       
       <script>
           var mobile = localStorage.getItem("mobile");
@@ -180,8 +193,8 @@
 
             this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
             this.map.controls[google.maps.ControlPosition.LEFT_TOP].push(destinationInput);
-            this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(btnRegular);
-            this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(btnPremium);
+            /* this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(btnRegular);
+            this.map.controls[google.maps.ControlPosition.BOTTOM_CENTER].push(btnPremium); */
         }
                            
         // Sets a listener on a radio button to change the filter type on Places
